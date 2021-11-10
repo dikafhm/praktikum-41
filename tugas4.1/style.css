@@ -1,0 +1,43 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 198px; height: 230px;
+    
+}
+.column {
+    float: left;
+    width: 33,33%;
+    padding: 20px;
+    overflow: hidden;
+}
+.column.mid {
+    width: 40%;
+}
+.column.side {
+    width: 20%;
+} 
+ .row::after {
+     content: "";
+     display: table;
+     clear: both;
+ }
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    } 
+}
+#fieldset2 {
+    width: 20px;
+}
+
+.footer {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
